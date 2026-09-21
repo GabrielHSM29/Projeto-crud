@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Histórico de Jogos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Histórico de Jogos</h1>
+
+        <button class="btn-adicionar" onclick="abrirFormulario()">
+            + Adicionar Jogo
+        </button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Jogo</th>
+                    <th>Gênero</th>
+                    <th>Plataforma</th>
+                    <th>Ano</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaJogos"></tbody>
+        </table>
+
+    </div>
+
+    <!-- Janela de adicionar/editar -->
+    <div id="modal" class="modal">
+
+        <div class="modal-conteudo">
+
+            <h2 id="tituloFormulario">Adicionar Jogo</h2>
+
+            <input type="hidden" id="idJogo">
+
+            <label>Nome do jogo</label>
+            <input type="text" id="nomeJogo" placeholder="Ex: Minecraft">
+
+            <label>Gênero</label>
+            <input type="text" id="generoJogo" placeholder="Ex: Aventura">
+
+            <label>Plataforma</label>
+            <input type="text" id="plataformaJogo" placeholder="Ex: PC">
+
+            <label>Ano</label>
+            <input type="number" id="anoJogo" placeholder="Ex: 2024">
+
+            <div class="botoes-formulario">
+                <button class="btn-salvar" onclick="salvarJogo()">
+                    Salvar
+                </button>
+
+                <button class="btn-cancelar" onclick="fecharFormulario()">
+                    Cancelar
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

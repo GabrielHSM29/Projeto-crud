@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.btn-adicionar,
+.btn-salvar {
+    background: #28a745;
+}
+
+.btn-adicionar:hover,
+.btn-salvar:hover {
+    background: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+}
+
+th {
+    background: #303030;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:hover td {
+    background: #f8f8f8;
+}
+
+.btn-editar {
+    background: #3498db;
+}
+
+.btn-excluir {
+    background: #e74c3c;
+}
+
+.btn-editar:hover {
+    background: #2583c4;
+}
+
+.btn-excluir:hover {
+    background: #c0392b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #0007;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.modal-conteudo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botoes-formulario {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-salvar,
+.btn-cancelar {
+    flex: 1;
+}
+
+.btn-cancelar {
+    background: #777;
+}
+
+.btn-cancelar:hover {
+    background: #555;
+}
